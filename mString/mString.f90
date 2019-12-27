@@ -13,7 +13,7 @@
 !  integer:typeof(), 
 !  join(strs),
 !  replace(old,new), 
-!  tab2blanks(integer:indent),
+!  tab2blanks(integer:length),
 !  String: reverse(),
 !  toNum(var),
 !
@@ -352,6 +352,10 @@ class(String)::self
     self%s = ''
     return
   endif
+  if(len(self%s)/=0) then
+    isEmpty = .False.
+    return
+  endif
   if(self%s=='') isEmpty = .True.
 end function
   
@@ -405,11 +409,24 @@ function adjust(self,width,how)
 !how:-1(left alignment),0(center alignment),1(right alignment)
 implicit none
 class(String)::self
-integer,intent(in)::width,how
+integer,intent(in)::width
+integer,optional,intent(in)::how
 character(len=width)::adjust
-  if(how<=-1)then
+integer::howIn
+  if(present(how))then
+    howIn = how
+  else
+    howIn = 0
+  endif
+  
+  if(len(self%s) >= width)then
+    adjust = self%s(1:width)
+    return
+  endif
+  
+  if(howIn<0)then
     adjust = adjustLeft(self%s,width)
-  elseif(how==0)then
+  elseif(howIn==0)then
     adjust = adjustCenter(self%s,width)
   else
     adjust = adjustRight(self%s,width)
@@ -702,11 +719,11 @@ logical::switch
 !============================================
 !将tab键转换为对应的空格, change tab to blanks
 !============================================
-function tab2blanks(self,indent)
+function tab2blanks(self,length)
 class(String)::self
-integer::indent
+integer::length
 type(String)::tab2blanks
-  tab2blanks = self%replace(char(9),repeat(' ',indent))
+  tab2blanks = self%replace(char(9),repeat(' ',length))
   end function
   
 !============================================
