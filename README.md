@@ -3,6 +3,7 @@
 ## 目录
 
 - [基本介绍和约定](## 基本介绍和约定)
+- [License](License)
 - [String 类型说明](## String 类型说明)
   - [运算符](### 运算符)
     - [赋值（=）](### 赋值（=）)
@@ -41,6 +42,12 @@
 String 类型是使用Fortran 语言自定义的字符串类型，它重载了常见的赋值和判断符号，并绑定了常用的字符串处理函数，以弥补Fortran 语言在字符串处理方面的弱势。
 
 Fortran 语法允许使用固定长度的字符串类型，其声明方法为 `character(len=10)::chars` ，但该方法声明的字符串长度固定，并不利于进行字符串扩充、比较、修改等常规操作。另外，该方法声明的字符串数组长度均一致，不适合不定长度字符串的处理需求。本模块mString 所定义的String 类型，使用allocatable 关键词，封装递延类字符串，字符串长度、内容不受约束，可轻松解决上述问题。在本说明文档中，为方便区分，将本模块定义的字符串类型统称为**String 类型**，而将固定长字符串类型统称为**Chars 类型**。
+
+License
+-------
+
+String-Fortran is released under the terms of the MIT license. See [COPYING](COPYING) for more
+information or see https://opensource.org/licenses/MIT.
 
 ## String 类型说明
 
