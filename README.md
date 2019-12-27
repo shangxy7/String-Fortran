@@ -1,4 +1,40 @@
-[ENGLISH](##ENGLISH)
+[ENGLISH](## ENGLISH)
+
+## 目录
+
+- [基本介绍和约定](## 基本介绍和约定)
+- [String 类型说明](## String 类型说明)
+  - [运算符](### 运算符)
+    - [赋值（=）](### 赋值（=）)
+    - [字符串拼接（+，//）](### 字符串拼接（+，//）)
+    - [包含（.in. ,  .notIn.）](### 包含（.in. ,  .notIn.）)
+
+  - [String方法](## String方法)
+    - [isEmpty](### isEmpty)
+
+    - [eq 和 ne](### eq 和 ne)
+
+    - [uppercase 和 lowercase](### uppercase 和 lowercase)
+
+    - [adjust](### adjust)
+
+    - [split](### split)
+
+    - [join](### join)
+
+    - [typeof](### typeof)
+
+    - [replace](### replace)
+
+    - [tab2blanks](### tab2blanks)
+
+    - [reverse](### reverse)
+
+    - [toNum](### toNum)
+
+  - [综合范例](## 综合范例)
+    - [读取 CSV 文件数据](### 读取 CSV 文件数据)
+
 
 ## 基本介绍和约定
 
