@@ -2,7 +2,7 @@
 
 ## 目录
 
-- [基本介绍和约定](#-基本介绍和约定)
+- 基本介绍和约定
 - [License](https://github.com/shangxy7/String-Fortran/blob/master/COPYING)
 - String 类型说明
   - 运算符
