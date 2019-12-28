@@ -1,40 +1,38 @@
-[ENGLISH](## ENGLISH)
+[ENGLISH](https://github.com/shangxy7/String-Fortran/blob/master/ENGLISH)
 
 ## 目录
 
-- [基本介绍和约定](## 基本介绍和约定)
-- [License](License)
-- [String 类型说明](## String 类型说明)
-  - [运算符](### 运算符)
-    - [赋值（=）](### 赋值（=）)
-    - [字符串拼接（+，//）](### 字符串拼接（+，//）)
-    - [包含（.in. ,  .notIn.）](### 包含（.in. ,  .notIn.）)
+- 基本介绍和约定
+- [License](https://github.com/shangxy7/String-Fortran/blob/master/COPYING)
+- String 类型说明
+  - 运算符
+    - 赋值（=）
+    - 字符串拼接（+，//）
+    - 包含（.in. ,  .notIn.）
+  - String方法
+    - isEmpty
 
-  - [String方法](## String方法)
-    - [isEmpty](### isEmpty)
+    - eq 和 ne
 
-    - [eq 和 ne](### eq 和 ne)
+    - uppercase 和 lowercase
 
-    - [uppercase 和 lowercase](### uppercase 和 lowercase)
+    - adjust
 
-    - [adjust](### adjust)
+    - split
 
-    - [split](### split)
+    - join
 
-    - [join](### join)
+    - typeof
 
-    - [typeof](### typeof)
+    - replace
 
-    - [replace](### replace)
+    - tab2blanks
 
-    - [tab2blanks](### tab2blanks)
+    - reverse
 
-    - [reverse](### reverse)
-
-    - [toNum](### toNum)
-
-  - [综合范例](## 综合范例)
-    - [读取 CSV 文件数据](### 读取 CSV 文件数据)
+    - toNum
+  - 综合范例
+    - 读取 CSV 文件数据
 
 
 ## 基本介绍和约定
@@ -111,7 +109,7 @@ String 类型重载了一个赋值运算=，可使用固定长度字符串chars 
   print*, charsArr
 ```
 
-![image-20191226151723522](.\pics\image-20191226151723522.png)
+![image-20191226151723522](https://github.com/shangxy7/String-Fortran/blob/master/pics/image-20191226151723522.png)
 
 #### 字符串拼接（+，//）
 
@@ -156,11 +154,11 @@ print*, '   pwr'=='pwr', 'pwr   '=='pwr'
   !F F
 ```
 
-*ps. String 类型中另外绑定了两个字符串比较函数，[eq和ne](####eq 和 ne)，可通过参数指定比较时是否忽略大小写、前后端空格，大大提高了字符串比较的便利*
+*ps. String 类型中另外绑定了两个字符串比较函数，eq和ne，可通过参数指定比较时是否忽略大小写、前后端空格，大大提高了字符串比较的便利*
 
 #### 包含（.in. ,  .notIn.）
 
-String类型针对字符串数组自定义了两个包含关系型判断，.in. 和  .notIn.，以判断符号左边的字符串是否在被右端的字符串数组包含。字符串判断的标准和 ==、/=相同，[点击可查看详情](###字符串比较（\==, /=）)。
+String类型针对字符串数组自定义了两个包含关系型判断，.in. 和  .notIn.，以判断符号左边的字符串是否在被右端的字符串数组包含。字符串判断的标准和 ==、/=相同。
 
 ```fortran
   type(string)::reactor,reactors(5)
@@ -266,7 +264,7 @@ String 类型的属性 s 采用allocatable定义，若未对其进行初始化�
   print*, a%adjust(7)
 ```
 
-![image-20191227104422742](.\pics\image-20191227104422742.png)
+![image-20191227104422742](https://github.com/shangxy7/String-Fortran/blob/master/pics/image-20191227104422742.png)
 
 #### split
 
@@ -334,7 +332,7 @@ String 类型的属性 s 采用allocatable定义，若未对其进行初始化�
   end do
 ```
 
-![image-20191227105558469](.\pics\image-20191227105558469.png)
+![image-20191227105558469](https://github.com/shangxy7/String-Fortran/blob/master/pics/image-20191227105558469.png)
 
 #### replace
 
@@ -352,7 +350,7 @@ String 类型的属性 s 采用allocatable定义，若未对其进行初始化�
   print*, a
 ```
 
-![image-20191227111417746](.\pics\image-20191227111417746.png)
+![image-20191227111417746](https://github.com/shangxy7/String-Fortran/blob/master/pics/image-20191227111417746.png)
 
 #### tab2blanks
 
@@ -374,7 +372,7 @@ String 类型的属性 s 采用allocatable定义，若未对其进行初始化�
   print*, a
 ```
 
-![image-20191227111833050](.\pics\image-20191227111833050.png)
+![image-20191227111833050](https://github.com/shangxy7/String-Fortran/blob/master/pics/image-20191227111833050.png)
 
 #### reverse
 
@@ -391,7 +389,7 @@ String 类型的属性 s 采用allocatable定义，若未对其进行初始化�
   print*, a
 ```
 
-![image-20191227120233127](.\pics\image-20191227120233127.png)
+![image-20191227120233127](https://github.com/shangxy7/String-Fortran/blob/master/pics/image-20191227120233127.png)
 
 #### toNum
 
@@ -433,7 +431,3 @@ String 类型的属性 s 采用allocatable定义，若未对其进行初始化�
 未完待续
 
 
-
-## ENGLISH
-
-to be continued...
