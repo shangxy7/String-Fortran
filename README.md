@@ -109,7 +109,7 @@ String 类型重载了一个赋值运算=，可使用固定长度字符串chars 
   print*, charsArr
 ```
 
-![image-20191226151723522](https://github.com/shangxy7/String-Fortran/blob/master/pics/image-20191226151723522.png)
+![image-20191226151723522](https://github.com/shangxy7/String-Fortran/blob/master/figs/image-20191226151723522.png)
 
 #### 字符串拼接（+，//）
 
@@ -264,7 +264,7 @@ String 类型的属性 s 采用allocatable定义，若未对其进行初始化�
   print*, a%adjust(7)
 ```
 
-![image-20191227104422742](https://github.com/shangxy7/String-Fortran/blob/master/pics/image-20191227104422742.png)
+![image-20191227104422742](https://github.com/shangxy7/String-Fortran/blob/master/figs/image-20191227104422742.png)
 
 #### split
 
@@ -332,7 +332,7 @@ String 类型的属性 s 采用allocatable定义，若未对其进行初始化�
   end do
 ```
 
-![image-20191227105558469](https://github.com/shangxy7/String-Fortran/blob/master/pics/image-20191227105558469.png)
+![image-20191227105558469](https://github.com/shangxy7/String-Fortran/blob/master/figs/image-20191227105558469.png)
 
 #### replace
 
@@ -350,7 +350,7 @@ String 类型的属性 s 采用allocatable定义，若未对其进行初始化�
   print*, a
 ```
 
-![image-20191227111417746](https://github.com/shangxy7/String-Fortran/blob/master/pics/image-20191227111417746.png)
+![image-20191227111417746](https://github.com/shangxy7/String-Fortran/blob/master/figs/image-20191227111417746.png)
 
 #### tab2blanks
 
@@ -372,7 +372,7 @@ String 类型的属性 s 采用allocatable定义，若未对其进行初始化�
   print*, a
 ```
 
-![image-20191227111833050](https://github.com/shangxy7/String-Fortran/blob/master/pics/image-20191227111833050.png)
+![image-20191227111833050](https://github.com/shangxy7/String-Fortran/blob/master/figs/image-20191227111833050.png)
 
 #### reverse
 
@@ -389,7 +389,7 @@ String 类型的属性 s 采用allocatable定义，若未对其进行初始化�
   print*, a
 ```
 
-![image-20191227120233127](https://github.com/shangxy7/String-Fortran/blob/master/pics/image-20191227120233127.png)
+![image-20191227120233127](https://github.com/shangxy7/String-Fortran/blob/master/figs/image-20191227120233127.png)
 
 #### toNum
 
